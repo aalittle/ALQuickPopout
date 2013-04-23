@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDA7EDD11727480B00330485 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7EDD01727480B00330485 /* UIKit.framework */; };
+		DDA7EDD31727480B00330485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7EDD21727480B00330485 /* Foundation.framework */; };
+		DDA7EDD51727480B00330485 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7EDD41727480B00330485 /* CoreGraphics.framework */; };
+		DDA7EDDB1727480B00330485 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA7EDD91727480B00330485 /* InfoPlist.strings */; };
+		DDA7EDDD1727480B00330485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA7EDDC1727480B00330485 /* main.m */; };
+		DDA7EDE11727480B00330485 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA7EDE01727480B00330485 /* ALAppDelegate.m */; };
+		DDA7EDE31727480B00330485 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA7EDE21727480B00330485 /* Default.png */; };
+		DDA7EDE51727480B00330485 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA7EDE41727480B00330485 /* Default@2x.png */; };
+		DDA7EDE71727480B00330485 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA7EDE61727480B00330485 /* Default-568h@2x.png */; };
+		DDA7EDEA1727480B00330485 /* ALRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA7EDE91727480B00330485 /* ALRootViewController.m */; };
+		DDA7EDED1727480B00330485 /* ALDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA7EDEC1727480B00330485 /* ALDataViewController.m */; };
+		DDA7EDF01727480B00330485 /* ALModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA7EDEF1727480B00330485 /* ALModelController.m */; };
+		DDA7EDF31727480B00330485 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA7EDF11727480B00330485 /* MainStoryboard.storyboard */; };
+		DDA7EDFB1727480B00330485 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7EDFA1727480B00330485 /* SenTestingKit.framework */; };
+		DDA7EDFC1727480B00330485 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7EDD01727480B00330485 /* UIKit.framework */; };
+		DDA7EDFD1727480B00330485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7EDD21727480B00330485 /* Foundation.framework */; };
+		DDA7EE051727480B00330485 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA7EE031727480B00330485 /* InfoPlist.strings */; };
+		DDA7EE081727480B00330485 /* QuickPopoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA7EE071727480B00330485 /* QuickPopoutTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDA7EDFE1727480B00330485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA7EDC51727480A00330485 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA7EDCC1727480B00330485;
+			remoteInfo = QuickPopout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDA7EDCD1727480B00330485 /* QuickPopout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPopout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA7EDD01727480B00330485 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDA7EDD21727480B00330485 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDA7EDD41727480B00330485 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDA7EDD81727480B00330485 /* QuickPopout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickPopout-Info.plist"; sourceTree = "<group>"; };
+		DDA7EDDA1727480B00330485 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDA7EDDC1727480B00330485 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDA7EDDE1727480B00330485 /* QuickPopout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickPopout-Prefix.pch"; sourceTree = "<group>"; };
+		DDA7EDDF1727480B00330485 /* ALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAppDelegate.h; sourceTree = "<group>"; };
+		DDA7EDE01727480B00330485 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
+		DDA7EDE21727480B00330485 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DDA7EDE41727480B00330485 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DDA7EDE61727480B00330485 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DDA7EDE81727480B00330485 /* ALRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALRootViewController.h; sourceTree = "<group>"; };
+		DDA7EDE91727480B00330485 /* ALRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALRootViewController.m; sourceTree = "<group>"; };
+		DDA7EDEB1727480B00330485 /* ALDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALDataViewController.h; sourceTree = "<group>"; };
+		DDA7EDEC1727480B00330485 /* ALDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALDataViewController.m; sourceTree = "<group>"; };
+		DDA7EDEE1727480B00330485 /* ALModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALModelController.h; sourceTree = "<group>"; };
+		DDA7EDEF1727480B00330485 /* ALModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALModelController.m; sourceTree = "<group>"; };
+		DDA7EDF21727480B00330485 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DDA7EDF91727480B00330485 /* QuickPopoutTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickPopoutTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA7EDFA1727480B00330485 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DDA7EE021727480B00330485 /* QuickPopoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickPopoutTests-Info.plist"; sourceTree = "<group>"; };
+		DDA7EE041727480B00330485 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDA7EE061727480B00330485 /* QuickPopoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickPopoutTests.h; sourceTree = "<group>"; };
+		DDA7EE071727480B00330485 /* QuickPopoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickPopoutTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDA7EDCA1727480B00330485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7EDD11727480B00330485 /* UIKit.framework in Frameworks */,
+				DDA7EDD31727480B00330485 /* Foundation.framework in Frameworks */,
+				DDA7EDD51727480B00330485 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA7EDF51727480B00330485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7EDFB1727480B00330485 /* SenTestingKit.framework in Frameworks */,
+				DDA7EDFC1727480B00330485 /* UIKit.framework in Frameworks */,
+				DDA7EDFD1727480B00330485 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDA7EDC41727480A00330485 = {
+			isa = PBXGroup;
+			children = (
+				DDA7EDD61727480B00330485 /* QuickPopout */,
+				DDA7EE001727480B00330485 /* QuickPopoutTests */,
+				DDA7EDCF1727480B00330485 /* Frameworks */,
+				DDA7EDCE1727480B00330485 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDA7EDCE1727480B00330485 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7EDCD1727480B00330485 /* QuickPopout.app */,
+				DDA7EDF91727480B00330485 /* QuickPopoutTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDA7EDCF1727480B00330485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7EDD01727480B00330485 /* UIKit.framework */,
+				DDA7EDD21727480B00330485 /* Foundation.framework */,
+				DDA7EDD41727480B00330485 /* CoreGraphics.framework */,
+				DDA7EDFA1727480B00330485 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDA7EDD61727480B00330485 /* QuickPopout */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7EDDF1727480B00330485 /* ALAppDelegate.h */,
+				DDA7EDE01727480B00330485 /* ALAppDelegate.m */,
+				DDA7EDE81727480B00330485 /* ALRootViewController.h */,
+				DDA7EDE91727480B00330485 /* ALRootViewController.m */,
+				DDA7EDEB1727480B00330485 /* ALDataViewController.h */,
+				DDA7EDEC1727480B00330485 /* ALDataViewController.m */,
+				DDA7EDEE1727480B00330485 /* ALModelController.h */,
+				DDA7EDEF1727480B00330485 /* ALModelController.m */,
+				DDA7EDF11727480B00330485 /* MainStoryboard.storyboard */,
+				DDA7EDD71727480B00330485 /* Supporting Files */,
+			);
+			path = QuickPopout;
+			sourceTree = "<group>";
+		};
+		DDA7EDD71727480B00330485 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7EDD81727480B00330485 /* QuickPopout-Info.plist */,
+				DDA7EDD91727480B00330485 /* InfoPlist.strings */,
+				DDA7EDDC1727480B00330485 /* main.m */,
+				DDA7EDDE1727480B00330485 /* QuickPopout-Prefix.pch */,
+				DDA7EDE21727480B00330485 /* Default.png */,
+				DDA7EDE41727480B00330485 /* Default@2x.png */,
+				DDA7EDE61727480B00330485 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDA7EE001727480B00330485 /* QuickPopoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7EE061727480B00330485 /* QuickPopoutTests.h */,
+				DDA7EE071727480B00330485 /* QuickPopoutTests.m */,
+				DDA7EE011727480B00330485 /* Supporting Files */,
+			);
+			path = QuickPopoutTests;
+			sourceTree = "<group>";
+		};
+		DDA7EE011727480B00330485 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7EE021727480B00330485 /* QuickPopoutTests-Info.plist */,
+				DDA7EE031727480B00330485 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDA7EDCC1727480B00330485 /* QuickPopout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA7EE0B1727480B00330485 /* Build configuration list for PBXNativeTarget "QuickPopout" */;
+			buildPhases = (
+				DDA7EDC91727480B00330485 /* Sources */,
+				DDA7EDCA1727480B00330485 /* Frameworks */,
+				DDA7EDCB1727480B00330485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickPopout;
+			productName = QuickPopout;
+			productReference = DDA7EDCD1727480B00330485 /* QuickPopout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDA7EDF81727480B00330485 /* QuickPopoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA7EE0E1727480B00330485 /* Build configuration list for PBXNativeTarget "QuickPopoutTests" */;
+			buildPhases = (
+				DDA7EDF41727480B00330485 /* Sources */,
+				DDA7EDF51727480B00330485 /* Frameworks */,
+				DDA7EDF61727480B00330485 /* Resources */,
+				DDA7EDF71727480B00330485 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDA7EDFF1727480B00330485 /* PBXTargetDependency */,
+			);
+			name = QuickPopoutTests;
+			productName = QuickPopoutTests;
+			productReference = DDA7EDF91727480B00330485 /* QuickPopoutTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDA7EDC51727480A00330485 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andrew Little";
+			};
+			buildConfigurationList = DDA7EDC81727480A00330485 /* Build configuration list for PBXProject "QuickPopout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DDA7EDC41727480A00330485;
+			productRefGroup = DDA7EDCE1727480B00330485 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDA7EDCC1727480B00330485 /* QuickPopout */,
+				DDA7EDF81727480B00330485 /* QuickPopoutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDA7EDCB1727480B00330485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7EDDB1727480B00330485 /* InfoPlist.strings in Resources */,
+				DDA7EDE31727480B00330485 /* Default.png in Resources */,
+				DDA7EDE51727480B00330485 /* Default@2x.png in Resources */,
+				DDA7EDE71727480B00330485 /* Default-568h@2x.png in Resources */,
+				DDA7EDF31727480B00330485 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA7EDF61727480B00330485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7EE051727480B00330485 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDA7EDF71727480B00330485 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDA7EDC91727480B00330485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7EDDD1727480B00330485 /* main.m in Sources */,
+				DDA7EDE11727480B00330485 /* ALAppDelegate.m in Sources */,
+				DDA7EDEA1727480B00330485 /* ALRootViewController.m in Sources */,
+				DDA7EDED1727480B00330485 /* ALDataViewController.m in Sources */,
+				DDA7EDF01727480B00330485 /* ALModelController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA7EDF41727480B00330485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7EE081727480B00330485 /* QuickPopoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDA7EDFF1727480B00330485 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDA7EDCC1727480B00330485 /* QuickPopout */;
+			targetProxy = DDA7EDFE1727480B00330485 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDA7EDD91727480B00330485 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA7EDDA1727480B00330485 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDA7EDF11727480B00330485 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA7EDF21727480B00330485 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		DDA7EE031727480B00330485 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA7EE041727480B00330485 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDA7EE091727480B00330485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDA7EE0A1727480B00330485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDA7EE0C1727480B00330485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickPopout/QuickPopout-Prefix.pch";
+				INFOPLIST_FILE = "QuickPopout/QuickPopout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDA7EE0D1727480B00330485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickPopout/QuickPopout-Prefix.pch";
+				INFOPLIST_FILE = "QuickPopout/QuickPopout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DDA7EE0F1727480B00330485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickPopout.app/QuickPopout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickPopout/QuickPopout-Prefix.pch";
+				INFOPLIST_FILE = "QuickPopoutTests/QuickPopoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DDA7EE101727480B00330485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickPopout.app/QuickPopout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickPopout/QuickPopout-Prefix.pch";
+				INFOPLIST_FILE = "QuickPopoutTests/QuickPopoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDA7EDC81727480A00330485 /* Build configuration list for PBXProject "QuickPopout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA7EE091727480B00330485 /* Debug */,
+				DDA7EE0A1727480B00330485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA7EE0B1727480B00330485 /* Build configuration list for PBXNativeTarget "QuickPopout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA7EE0C1727480B00330485 /* Debug */,
+				DDA7EE0D1727480B00330485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDA7EE0E1727480B00330485 /* Build configuration list for PBXNativeTarget "QuickPopoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA7EE0F1727480B00330485 /* Debug */,
+				DDA7EE101727480B00330485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDA7EDC51727480A00330485 /* Project object */;
+}
