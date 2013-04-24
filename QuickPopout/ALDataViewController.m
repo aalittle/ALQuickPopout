@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self hideQuickPopout];
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,7 +30,78 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
+}
+
+- (IBAction)onTapActionButton:(id)sender {
+
+    [self displayQuickPopout];
+}
+
+#define QuickPopoutRegularSizedSideLength 264.0
+#define QuickPopoutFullSizedSideLength 300.0
+
+-(CGRect)fullSizedQuickPopoutFrame {
+    
+    CGFloat originX = (self.containerView.frame.size.width - QuickPopoutFullSizedSideLength)/2;
+    CGFloat originY = (self.containerView.frame.size.height - QuickPopoutFullSizedSideLength)/2;
+    
+    return CGRectMake(originX, originY, QuickPopoutFullSizedSideLength, QuickPopoutFullSizedSideLength);
+}
+
+-(CGRect)regularSizedQuickPopoutFrame {
+    
+    CGFloat originX = (self.containerView.frame.size.width - QuickPopoutRegularSizedSideLength)/2;
+    CGFloat originY = (self.containerView.frame.size.height - QuickPopoutRegularSizedSideLength)/2;
+
+    return CGRectMake(originX, originY, QuickPopoutRegularSizedSideLength, QuickPopoutRegularSizedSideLength);
+}
+
+-(CGRect)zeroSizedQuickPopoutFrame {
+    
+    return CGRectMake(self.containerView.center.x, self.containerView.center.y, 0, 0);
+}
+
+-(void)displayQuickPopout {
+    
+    self.quickPopoutView.frame = [self zeroSizedQuickPopoutFrame];
+        
+    [UIView animateWithDuration:0.20 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+        self.quickPopoutView.frame = [self fullSizedQuickPopoutFrame];
+    }
+    completion:^(BOOL finished){
+    
+        [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+            self.quickPopoutView.frame = [self regularSizedQuickPopoutFrame];
+
+        } completion:^(BOOL finished){
+        
+        }];
+    }];
+}
+
+-(void)hideQuickPopout {
+        
+    [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+        self.quickPopoutView.frame = [self fullSizedQuickPopoutFrame];
+    }
+    completion:^(BOOL finished){
+                         
+         [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+             
+             self.quickPopoutView.frame = [self zeroSizedQuickPopoutFrame];
+         } completion:^(BOOL finished){
+             
+         }];
+    }];
+}
+
+
+- (IBAction)tapGestureHandler:(id)sender {
+    
+    [self hideQuickPopout];
 }
 
 @end

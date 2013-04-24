@@ -10,7 +10,10 @@
 
 @interface ALDataViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *dataLabel;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
+@property (weak, nonatomic) IBOutlet UIView *quickPopoutView;
+@property (weak, nonatomic) IBOutlet UIButton *actionButton;
 @property (strong, nonatomic) id dataObject;
 
 @end
