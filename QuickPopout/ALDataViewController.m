@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Andrew Little. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "ALDataViewController.h"
 
 @interface ALDataViewController ()
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self roundCornersAndAddBorderToContainerView];
+    self.actionButton.backgroundColor = [UIColor colorWithRed:244.0/255.0 green:180.0/255.0 blue:0 alpha:1.0];
+    self.actionButton.layer.cornerRadius = 5;
+    self.actionButton.layer.masksToBounds = YES;
+
+    
+    [self roundCornersAndAddBorderToPopout];
     [self hideQuickPopout];
 }
 
@@ -39,6 +47,22 @@
 
 #define QuickPopoutRegularSizedSideLength 264.0
 #define QuickPopoutFullSizedSideLength 300.0
+
+-(void)roundCornersAndAddBorderToContainerView {
+    
+    self.containerView.layer.cornerRadius = 5;
+    self.containerView.layer.masksToBounds = YES;
+    self.containerView.layer.borderColor = [[UIColor colorWithRed:244.0/255.0 green:180.0/255.0 blue:0 alpha:1.0] CGColor];
+    self.containerView.layer.borderWidth = 1.0;
+}
+
+-(void)roundCornersAndAddBorderToPopout {
+    
+    self.quickPopoutView.layer.cornerRadius = 10;
+    self.quickPopoutView.layer.masksToBounds = YES;
+    self.quickPopoutView.layer.borderColor = [[UIColor darkGrayColor] CGColor];
+    self.quickPopoutView.layer.borderWidth = 1.0;
+}
 
 -(CGRect)fullSizedQuickPopoutFrame {
     
