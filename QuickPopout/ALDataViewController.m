@@ -18,13 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     [self roundCornersAndAddBorderToContainerView];
-    self.actionButton.backgroundColor = [UIColor colorWithRed:244.0/255.0 green:180.0/255.0 blue:0 alpha:1.0];
-    self.actionButton.layer.cornerRadius = 5;
-    self.actionButton.layer.masksToBounds = YES;
-
-    
+    [self roundCornersAndSetBackgroundOnButton];
     [self roundCornersAndAddBorderToPopout];
     [self hideQuickPopout];
 }
@@ -47,6 +44,13 @@
 
 #define QuickPopoutRegularSizedSideLength 264.0
 #define QuickPopoutFullSizedSideLength 300.0
+
+-(void)roundCornersAndSetBackgroundOnButton {
+    
+    self.actionButton.backgroundColor = [UIColor colorWithRed:244.0/255.0 green:180.0/255.0 blue:0 alpha:1.0];
+    self.actionButton.layer.cornerRadius = 5;
+    self.actionButton.layer.masksToBounds = YES;
+}
 
 -(void)roundCornersAndAddBorderToContainerView {
     
@@ -82,7 +86,10 @@
 
 -(CGRect)zeroSizedQuickPopoutFrame {
     
-    return CGRectMake(self.containerView.center.x, self.containerView.center.y, 0, 0);
+    CGFloat originX = (self.containerView.frame.size.width)/2;
+    CGFloat originY = (self.containerView.frame.size.height)/2;
+    
+    return CGRectMake(originX, originY, 0, 0);
 }
 
 -(void)displayQuickPopout {
@@ -106,20 +113,27 @@
 }
 
 -(void)hideQuickPopout {
-        
-    [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        
-        self.quickPopoutView.frame = [self fullSizedQuickPopoutFrame];
+    
+    if (self.quickPopoutView.frame.size.height == 0) {
+        return;
     }
-    completion:^(BOOL finished){
-                         
-         [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    else {
+        [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            
+            self.quickPopoutView.frame = [self fullSizedQuickPopoutFrame];
+         }
+         completion:^(BOOL finished){
              
-             self.quickPopoutView.frame = [self zeroSizedQuickPopoutFrame];
-         } completion:^(BOOL finished){
-             
+             [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                 
+                 self.quickPopoutView.frame = [self zeroSizedQuickPopoutFrame];
+                 NSLog(@"x%f y%f", self.quickPopoutView.frame.origin.x, self.quickPopoutView.frame.origin.y);
+                 
+             } completion:^(BOOL finished){
+                 
+             }];
          }];
-    }];
+    }
 }
 
 
