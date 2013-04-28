@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ALQuickPopoutView.h"
 
 @interface ALDataViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 
-@property (weak, nonatomic) IBOutlet UIView *quickPopoutView;
+@property (weak, nonatomic) IBOutlet ALQuickPopoutView *quickPopoutView;
 @property (weak, nonatomic) IBOutlet UIButton *actionButton;
 @property (strong, nonatomic) id dataObject;
 

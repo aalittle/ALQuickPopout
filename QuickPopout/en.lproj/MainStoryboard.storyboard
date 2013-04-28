@@ -16,8 +16,8 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eX-gI-ys2">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="ZmG-6K-zun"/>
-                                            <constraint firstAttribute="width" constant="133" id="cUl-re-1DN"/>
+                                            <constraint firstAttribute="height" constant="44" id="GlC-4l-NgD"/>
+                                            <constraint firstAttribute="width" constant="133" id="WD6-QY-q2X"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Make it happen">
@@ -31,19 +31,19 @@
                                             <action selector="onTapActionButton:" destination="5" eventType="touchUpInside" id="kT5-bf-cpa"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TST-qO-CEj">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TST-qO-CEj" customClass="ALQuickPopoutView">
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.28627452254295349" green="0.52549022436141968" blue="0.90588241815567017" alpha="1" colorSpace="deviceRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="TST-qO-CEj" firstAttribute="leading" secondItem="9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="K2I-CP-O76"/>
-                                    <constraint firstItem="TST-qO-CEj" firstAttribute="centerX" secondItem="3eX-gI-ys2" secondAttribute="centerX" type="default" id="Q6W-xa-oEF"/>
-                                    <constraint firstItem="3eX-gI-ys2" firstAttribute="centerY" secondItem="9" secondAttribute="centerY" type="default" id="Zr7-6f-e2Z"/>
-                                    <constraint firstAttribute="trailing" secondItem="TST-qO-CEj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cME-ho-fis"/>
-                                    <constraint firstAttribute="bottom" secondItem="TST-qO-CEj" secondAttribute="bottom" constant="380" id="gqv-sw-2of"/>
-                                    <constraint firstItem="TST-qO-CEj" firstAttribute="top" secondItem="9" secondAttribute="top" constant="126" id="y7f-EM-Uwh"/>
+                                    <constraint firstItem="TST-qO-CEj" firstAttribute="leading" secondItem="9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2eb-qG-Az5"/>
+                                    <constraint firstAttribute="bottom" secondItem="TST-qO-CEj" secondAttribute="bottom" constant="380" id="9fq-Va-qux"/>
+                                    <constraint firstItem="3eX-gI-ys2" firstAttribute="centerX" secondItem="TST-qO-CEj" secondAttribute="centerX" type="default" id="LU7-hi-n1T"/>
+                                    <constraint firstItem="TST-qO-CEj" firstAttribute="top" secondItem="9" secondAttribute="top" constant="126" id="S7q-xM-gyx"/>
+                                    <constraint firstItem="3eX-gI-ys2" firstAttribute="centerY" secondItem="9" secondAttribute="centerY" type="default" id="XIg-MM-nvi"/>
+                                    <constraint firstAttribute="trailing" secondItem="TST-qO-CEj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="wOb-jY-4aJ"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="OyG-5P-oAa" appends="YES" id="ZkT-Km-Npq"/>
@@ -52,10 +52,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.078431375324726105" green="0.65490198135375977" blue="0.39607846736907959" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="9" firstAttribute="centerX" secondItem="6" secondAttribute="centerX" type="default" id="0M1-JH-wLs"/>
-                            <constraint firstItem="9" firstAttribute="top" secondItem="6" secondAttribute="top" constant="22" id="Hqv-Th-uUo"/>
-                            <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="TqG-j8-04v"/>
-                            <constraint firstItem="9" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="11" id="mgF-FQ-W3V"/>
+                            <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="6S6-rL-cB7"/>
+                            <constraint firstItem="9" firstAttribute="centerX" secondItem="6" secondAttribute="centerX" type="default" id="J5j-CE-htI"/>
+                            <constraint firstItem="9" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="11" id="Ygq-3g-uvS"/>
+                            <constraint firstItem="9" firstAttribute="top" secondItem="6" secondAttribute="top" constant="22" id="thV-1z-adx"/>
                         </constraints>
                     </view>
                     <connections>
@@ -96,8 +96,11 @@
                 <relationship kind="action" name="tapGestureHandler:"/>
                 <relationship kind="outlet" name="actionButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="quickPopoutView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="quickPopoutView" candidateClass="ALQuickPopoutView"/>
             </relationships>
+        </class>
+        <class className="ALQuickPopoutView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ALQuickPopoutView.h"/>
         </class>
         <class className="ALRootViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ALRootViewController.h"/>

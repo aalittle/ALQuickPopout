@@ -25,6 +25,7 @@
 		DDA7EDFD1727480B00330485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7EDD21727480B00330485 /* Foundation.framework */; };
 		DDA7EE051727480B00330485 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA7EE031727480B00330485 /* InfoPlist.strings */; };
 		DDA7EE081727480B00330485 /* QuickPopoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA7EE071727480B00330485 /* QuickPopoutTests.m */; };
+		DDF7CFDA172D4D5900BA9E00 /* ALQuickPopoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF7CFD9172D4D5900BA9E00 /* ALQuickPopoutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		DDA7EE041727480B00330485 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDA7EE061727480B00330485 /* QuickPopoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickPopoutTests.h; sourceTree = "<group>"; };
 		DDA7EE071727480B00330485 /* QuickPopoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickPopoutTests.m; sourceTree = "<group>"; };
+		DDF7CFD8172D4D5900BA9E00 /* ALQuickPopoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALQuickPopoutView.h; sourceTree = "<group>"; };
+		DDF7CFD9172D4D5900BA9E00 /* ALQuickPopoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALQuickPopoutView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 			children = (
 				DDA7EDDF1727480B00330485 /* ALAppDelegate.h */,
 				DDA7EDE01727480B00330485 /* ALAppDelegate.m */,
+				DDF7CFD8172D4D5900BA9E00 /* ALQuickPopoutView.h */,
+				DDF7CFD9172D4D5900BA9E00 /* ALQuickPopoutView.m */,
 				DDA7EDE81727480B00330485 /* ALRootViewController.h */,
 				DDA7EDE91727480B00330485 /* ALRootViewController.m */,
 				DDA7EDEB1727480B00330485 /* ALDataViewController.h */,
@@ -286,6 +291,7 @@
 				DDA7EDEA1727480B00330485 /* ALRootViewController.m in Sources */,
 				DDA7EDED1727480B00330485 /* ALDataViewController.m in Sources */,
 				DDA7EDF01727480B00330485 /* ALModelController.m in Sources */,
+				DDF7CFDA172D4D5900BA9E00 /* ALQuickPopoutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +478,7 @@
 				DDA7EE0D1727480B00330485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDA7EE0E1727480B00330485 /* Build configuration list for PBXNativeTarget "QuickPopoutTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				DDA7EE101727480B00330485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
